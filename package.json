@@ -1,0 +1,30 @@
+{
+  "name": "bower-license",
+  "version": "0.0.1",
+  "description": "Generates a list of bower dependencies for a project",
+  "preferGlobal": "true",
+  "bin": {
+    "bower-license": "./bin/bower-license"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AceMetrix/bower-license.git"
+  },
+  "keywords": [
+    "bower",
+    "license",
+    "oss"
+  ],
+  "author": "Duncan Wong <baduncaduncan@gmail.com>",
+  "license": "Apache2",
+  "bugs": {
+    "url": "https://github.com/AceMetrix/bower-license/issues"
+  },
+  "dependencies": {
+    "treeify": "~1.0.1",
+    "bower-json": "~0.4.0",
+    "underscore": "~1.5.2",
+    "npm-license": "~0.1.9"
+  }
+}

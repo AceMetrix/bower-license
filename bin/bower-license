@@ -1,0 +1,7 @@
+#!/usr/bin/env node
+
+var checker = require('../lib/index');
+
+checker.init({}, function(json){
+    checker.print(json);
+});
