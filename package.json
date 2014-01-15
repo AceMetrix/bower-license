@@ -1,6 +1,6 @@
 {
   "name": "bower-license",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Generates a list of bower dependencies for a project",
   "preferGlobal": "true",
   "bin": {
