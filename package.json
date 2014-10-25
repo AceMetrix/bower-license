@@ -23,10 +23,11 @@
     "url": "https://github.com/AceMetrix/bower-license/issues"
   },
   "dependencies": {
-    "treeify": "~1.0.1",
     "bower-json": "~0.4.0",
-    "underscore": "~1.5.2",
     "npm-license": "~0.1.9",
-    "package-license": "~0.1.1"
+    "package-license": "~0.1.1",
+    "raptor-args": "~1.0.1",
+    "treeify": "~1.0.1",
+    "underscore": "~1.5.2"
   }
 }

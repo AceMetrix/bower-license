@@ -71,12 +71,22 @@ bower-license
    └─ repository: https://github.com/twitter/bootstrap
 ```
 
+Export options:
+
+```
+bower-license -e json
+```
+
+Used as a library:
+
 ```
 var license = require('bower-license');
 license.init('/path/to/package', function(licenseMap){
     console.log(licenseMap);
 });
 ```
+
+
    
 #Notes
 Any asterisks (*) after a license value were implictly discovered/detected by their README or LICENSE file and may not be truly reliable.

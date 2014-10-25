@@ -2,6 +2,41 @@
 
 var checker = require('../lib/index');
 
+var parsed = require('raptor-args')
+    .createParser({
+        '--help': {
+            type: 'boolean',
+            description: 'Show this help message'
+        },
+        '--export -e': {
+            type: 'string',
+            description: 'Export format, could be json or tree (default)',
+            defaultValue: 'tree'
+        }
+        
+    })
+    .usage('Usage: $0 [options]')
+    .example(
+        'First example',
+        '$0 -e json')
+    .validate(function(result) {
+        if (result.help) {
+            this.printUsage();
+            process.exit(0);
+        }        
+    })
+    .onError(function(err) {
+        this.printUsage();
+        console.error(err);
+        process.exit(1);
+    })
+    .parse();
+
 checker.init({}, function(json){
-    checker.print(json);
+if (parsed.export==='json'){
+        checker.printJson(json);
+    }else{
+        checker.printTree(json);
+    }
+    
 });
