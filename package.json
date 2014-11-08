@@ -1,6 +1,6 @@
 {
   "name": "bower-license",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Generates a list of bower dependencies for a project",
   "preferGlobal": "true",
   "main": "./lib/index",
@@ -18,6 +18,10 @@
     "oss"
   ],
   "author": "Duncan Wong <baduncaduncan@gmail.com>",
+  "contributors": [{
+    "name": "Alexander Wunschik",
+    "email": "dev@wunschik.net"
+  }],
   "license": "Apache2",
   "bugs": {
     "url": "https://github.com/AceMetrix/bower-license/issues"
@@ -25,7 +29,7 @@
   "dependencies": {
     "bower-json": "~0.4.0",
     "npm-license": "~0.1.9",
-    "package-license": "~0.1.1",
+    "package-license": "~0.2.0",
     "raptor-args": "~1.0.1",
     "treeify": "~1.0.1",
     "underscore": "~1.5.2"
