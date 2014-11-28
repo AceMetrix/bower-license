@@ -77,6 +77,12 @@ Export options:
 bower-license -e json
 ```
 
+Directory options:
+
+```
+bower-license -d other_bower_components
+```
+
 Used as a library:
 
 ```

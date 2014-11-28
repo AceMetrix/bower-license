@@ -12,6 +12,11 @@ var parsed = require('raptor-args')
             type: 'string',
             description: 'Export format, could be json or tree (default)',
             defaultValue: 'tree'
+        },
+        '--directory -d': {
+            type: 'string',
+            description: 'Component directory (default: bower_components)',
+            defaultValue: 'bower_components'
         }
         
     })
@@ -32,7 +37,12 @@ var parsed = require('raptor-args')
     })
     .parse();
 
-checker.init({}, function(json){
+var options = {};
+if (parsed.directory) {
+    options.directory = parsed.directory;
+}
+
+checker.init(options, function(json){
 if (parsed.export==='json'){
         checker.printJson(json);
     }else{
