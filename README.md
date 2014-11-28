@@ -77,11 +77,17 @@ Export options:
 bower-license -e json
 ```
 
+Directory options:
+
+```
+bower-license -d other_bower_components
+```
+
 Used as a library:
 
 ```
 var license = require('bower-license');
-license.init('/path/to/package', function(licenseMap){
+license.init({directory: 'bower_components'}, function(licenseMap){
     console.log(licenseMap);
 });
 ```
