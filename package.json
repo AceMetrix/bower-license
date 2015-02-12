@@ -1,6 +1,6 @@
 {
   "name": "bower-license",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "Generates a list of bower dependencies for a project",
   "preferGlobal": "true",
   "main": "./lib/index",
