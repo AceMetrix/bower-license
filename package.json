@@ -18,7 +18,7 @@
     "oss"
   ],
   "author": "Duncan Wong <baduncaduncan@gmail.com>",
-  "license": "Apache2",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/AceMetrix/bower-license/issues"
   },
