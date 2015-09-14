@@ -13,7 +13,7 @@ var parsed = require('raptor-args')
             description: 'Export format, could be json or tree (default)',
             defaultValue: 'tree'
         }
-        
+
     })
     .usage('Usage: $0 [options]')
     .example(
@@ -23,7 +23,7 @@ var parsed = require('raptor-args')
         if (result.help) {
             this.printUsage();
             process.exit(0);
-        }        
+        }
     })
     .onError(function(err) {
         this.printUsage();
@@ -32,10 +32,14 @@ var parsed = require('raptor-args')
     })
     .parse();
 
-checker.init({}, function(json){
-  if (parsed.export==='json'){
-      checker.printJson(json);
-  } else{
-      checker.printTree(json);
-  }
+checker.init({}, function(json, err){
+    if (!!err) {
+        console.log(err);
+    } else {
+        if (parsed.export==='json'){
+            checker.printJson(json);
+        } else{
+            checker.printTree(json);
+        }
+    }
 });
