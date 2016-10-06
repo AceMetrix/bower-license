@@ -81,7 +81,7 @@ Used as a library:
 
 ```
 var license = require('bower-license');
-license.init('/path/to/package', function(licenseMap, err){
+license.init({directory: '/path/to/bower_components'}, function(licenseMap, err){
     if (!err) {
         console.log(licenseMap);
     }
