@@ -2,7 +2,6 @@
   "name": "bower-license",
   "version": "0.4.5",
   "description": "Generates a list of bower dependencies for a project",
-  "preferGlobal": "true",
   "main": "./lib/index",
   "bin": {
     "bower-license": "./bin/bower-license"
@@ -23,11 +22,11 @@
     "url": "https://github.com/AceMetrix/bower-license/issues"
   },
   "dependencies": {
-    "bower-json": "~0.8.0",
+    "bower-json": "~0.8.4",
     "npm-license": "~0.3.3",
-    "package-license": "~0.1.1",
-    "raptor-args": "~1.0.1",
-    "treeify": "~1.0.1",
-    "underscore": "~1.5.2"
+    "package-license": "~0.4.1",
+    "raptor-args": "~1.0.3",
+    "treeify": "~1.1.0",
+    "underscore": "~1.11.0"
   }
 }
